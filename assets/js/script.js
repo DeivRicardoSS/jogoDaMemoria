@@ -18,7 +18,7 @@ for(let i=0; i < emojis.length; i++){
     box.className = "item";
     box.innerHTML = shuffleEmojis[i];
     box.onclick = handleClick;
-    document.querySelector(".game").appendChild(box)
+    document.querySelector(".game").appendChild(box);
 }
 
 function handleClick(){
@@ -39,7 +39,6 @@ function checkMatch(){
     }else{
         openCards[0].classList.remove("boxOpen");
         openCards[1].classList.remove("boxOpen");
-        alert("itens diferentes" + openCards[0].innerHTML + " != "+ openCards[1].innerHTML)
     }
 
     openCards = [];
